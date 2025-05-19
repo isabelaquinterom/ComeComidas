@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package autonoma.ComeComidas.main;
+package autonoma.ComeComida.main;
 
-/**
- *
- * @author DELL
- */
+import autonoma.ComeComida.views.JuegoFrame;
+
 public class Main {
-    main
+    public static void main(String[] args) {
+        new JuegoFrame();
+    }
 }
+
