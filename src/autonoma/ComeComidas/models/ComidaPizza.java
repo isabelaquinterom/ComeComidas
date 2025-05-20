@@ -8,4 +8,4 @@ public class ComidaPizza extends Comida {
         this.imagen = new javax.swing.ImageIcon(getClass().getResource("/imagenes/pizza.png")).getImage();
     }
 }
-  
+    
