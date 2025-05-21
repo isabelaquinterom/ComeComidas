@@ -11,7 +11,7 @@ import java.util.Iterator;
 public class JuegoPanel extends JPanel implements MouseListener {
     private ArrayList<Elemento> elementos; // lista de elementos en pantalla
     private int puntaje = 0; // puntaje actual del jugador
-    private Image fondo; // imagen de fondo
+    private Image fondo; // imagen fondo
 
     public JuegoPanel() {
         // configura el tamaño del panel
