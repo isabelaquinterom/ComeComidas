@@ -1,4 +1,4 @@
-package autonoma.ComeComidas.views;
+package autonoma.ComeComidas.Views;
 
 import javax.swing.*;
 
