@@ -26,7 +26,7 @@ public class VentanaJuego extends JFrame {
         titulo.setFont(new Font("Comic Sans MS", Font.BOLD, 32));
         panelInicio.add(titulo, BorderLayout.CENTER);
 
-        JButton botonJugar = new JButton("¡Sí, quiero jugar!");
+        JButton botonJugar = new JButton("¡Si, quiero jugar!");
         botonJugar.setFont(new Font("Arial", Font.BOLD, 20));
         botonJugar.setBackground(Color.GREEN);
         botonJugar.setFocusPainted(false);
