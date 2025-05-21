@@ -9,29 +9,34 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class JuegoPanel extends JPanel implements MouseListener {
-    private ArrayList<Elemento> elementos;
-    private int puntaje = 0;
-    private Image fondo;
+    private ArrayList<Elemento> elementos; // lista de elementos en pantalla
+    private int puntaje = 0; // puntaje actual del jugador
+    private Image fondo; // imagen de fondo
 
     public JuegoPanel() {
+        // configura el tamaño del panel
         setPreferredSize(new Dimension(800, 600));
         fondo = new ImageIcon(getClass().getResource("/imagenes/fondo_divertido.png")).getImage();
         elementos = new ArrayList<>();
         addMouseListener(this);
 
+        // inicia los hilos que agregan elementos al juego
         new Thread(new ManejadorComida(this)).start();
         new Thread(new ManejadorVeneno(this)).start();
 
+        // inicia el temporizador para actualizar el juego
         Timer timer = new Timer(30, e -> actualizar());
         timer.start();
     }
 
+    // agrega un nuevo elemento si hay menos de 7 del mismo tipo
     public synchronized void agregarElemento(Elemento e) {
         if (contarTipo(e.getClass()) < 7) {
             elementos.add(e);
         }
     }
 
+    // cuenta cuantos elementos hay de cierto tipo
     private int contarTipo(Class<?> tipo) {
         int c = 0;
         for (Elemento e : elementos) {
@@ -40,6 +45,7 @@ public class JuegoPanel extends JPanel implements MouseListener {
         return c;
     }
 
+    // actualiza la posicion de los elementos y los elimina si salen de la pantalla
     private void actualizar() {
         Iterator<Elemento> it = elementos.iterator();
         while (it.hasNext()) {
@@ -52,6 +58,7 @@ public class JuegoPanel extends JPanel implements MouseListener {
         repaint();
     }
 
+    // dibuja el fondo los elementos y el puntaje
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -64,6 +71,7 @@ public class JuegoPanel extends JPanel implements MouseListener {
         g.drawString("Puntaje: " + puntaje, 10, 30);
     }
 
+    // maneja los clics del mouse para detectar si se ha hecho clic en un elemento
     @Override
     public void mouseClicked(MouseEvent e) {
         Iterator<Elemento> it = elementos.iterator();
@@ -78,7 +86,7 @@ public class JuegoPanel extends JPanel implements MouseListener {
         }
         repaint();
 
-        // ✅ Lógica para terminar el juego
+        // verifica si el juego debe terminar por puntaje alto o bajo
         if (puntaje >= 10 || puntaje <= -5) {
             int opcion = JOptionPane.showConfirmDialog(
                 this,
@@ -95,13 +103,14 @@ public class JuegoPanel extends JPanel implements MouseListener {
         }
     }
 
+    // reinicia el juego limpiando los elementos y reiniciando el puntaje
     private void reiniciarJuego() {
         elementos.clear();
         puntaje = 0;
         repaint();
     }
 
-    // Métodos vacíos del MouseListener
+    // metodos vacios requeridos por mouselistener
     public void mousePressed(MouseEvent e) {}
     public void mouseReleased(MouseEvent e) {}
     public void mouseEntered(MouseEvent e) {}

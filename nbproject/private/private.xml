@@ -3,19 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/Elemento.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/ComidaSandwich.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/JuegoInterface.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/Comida.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/VenenoHongo.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/Veneno.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/VenenoCalavera.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/ManejadorVeneno.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/Views/JuegoPanel.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/ManejadorComida.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/Views/VentanaJuego.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/models/VenenoBacteria.java</file>
-            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/Views/JuegoFrame.java</file>
+            <file>file:/C:/Users/DELL/Desktop/POO/ComeComidas/src/autonoma/ComeComidas/main/Main.java</file>
         </group>
     </open-files>
 </project-private>
