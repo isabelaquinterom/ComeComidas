@@ -1,6 +1,6 @@
 package autonoma.ComeComidas.models;
 
-import autonoma.ComeComida.models.JuegoInterface;
+import autonoma.ComeComidas.models.JuegoInterface;
 import java.awt.*;
 
 import javax.swing.ImageIcon;

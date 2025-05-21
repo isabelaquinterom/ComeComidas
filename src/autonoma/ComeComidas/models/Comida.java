@@ -1,6 +1,6 @@
 package autonoma.ComeComidas.models;
 
-import autonoma.ComeComida.models.Elemento;
+import autonoma.ComeComidas.models.Elemento;
 
 public class Comida extends Elemento {
     public Comida(int x) {

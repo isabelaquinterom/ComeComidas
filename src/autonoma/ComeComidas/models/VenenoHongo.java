@@ -1,4 +1,4 @@
-package autonoma.ComeComida.models;
+package autonoma.ComeComidas.models;
 
 public class VenenoHongo extends Veneno {
     public VenenoHongo(int x) {

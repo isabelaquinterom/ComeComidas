@@ -1,6 +1,6 @@
-package autonoma.ComeComida.main;
+package autonoma.ComeComidas.main;
 
-import autonoma.ComeComida.views.JuegoFrame;
+import autonoma.ComeComidas.Views.JuegoFrame;
 
 public class Main {
     public static void main(String[] args) {

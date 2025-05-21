@@ -1,6 +1,6 @@
 package autonoma.ComeComidas.Views;
 
-import autonoma.ComeComida.models.*;
+import autonoma.ComeComidas.models.*;
 
 import javax.swing.*;
 import java.awt.*;

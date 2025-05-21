@@ -1,4 +1,4 @@
-package autonoma.ComeComida.models;
+package autonoma.ComeComidas.models;
 
 import autonoma.ComeComidas.models.Elemento;
 
