@@ -45,7 +45,7 @@ public class JuegoPanel extends JPanel implements MouseListener {
         return c;
     }
 
-    // actualiza la posicion de los elementos y los elimina si salen de la pantalla
+    // actualiza posicion de los elementos y elimina si salen de la pantalla
     private void actualizar() {
         Iterator<Elemento> it = elementos.iterator();
         while (it.hasNext()) {
